@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@561&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="centre" >
+        <div class="top">
+        <div id="header"></div>
+        <div id="website_tittle">
+            <img
+            id="image"
+            src="/static/logo.svg"
+            alt="Bajaj Health Logo">
+            Generate FAQs for Articles
+        </div>
+        <div id="website_link"> Find all articles here : <a href="//www.bajajfinservhealth.in/articles-sitemap-0.xml">www.bajajfinservhealth.in/articles-sitemap-0.xml</a></div>
+        <div id="faq_box">
+            <div id="faq_heading">Articles :</div>
+            <div id="faq_items">
+                <form action="{{url_for('website_page')}}" method="POST">
+                {%for i in list%} 
+                    <input type="submit" id="article" value="{{i}}" name="article">
+                <br>
+                {%endfor%}
+                </form>
+            </div>
+            <div id="info">From and for articles published in https://www.bajajfinservhealth.in/articles</div>
+        </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

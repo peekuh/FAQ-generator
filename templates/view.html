@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@561&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="centre" >
+        <div class="top">
+        <div id="header"></div>
+        <div id="website_tittle">{{title}}</div>
+        <div id="website_link">link to website :{{link}} </div>
+        <div id="faq_box">
+            <div id="faq_heading">FAQs :</div>
+            <div id="faq_items">
+                {%for i in range(0,6,2)%}
+                <div id="item">
+                    <div id="faq_text">
+                    <div id="question">{{list_qna[i]}}</div>
+                    <div id="answer">{{list_qna[i+1]}}</div>
+                    </div>
+                </div>
+                {%endfor%}
+
+                
+            </div>
+            <div id="info">From and for articles published in https://www.bajajfinservhealth.in/articles</div>
+        </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

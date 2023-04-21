@@ -1,0 +1,138 @@
+body{
+    background-color: rgb(237, 237, 237);
+    display: grid;
+    position: relative;
+    place-items: center;
+    
+}
+
+#image{
+    height: 2vh;
+}
+
+
+#centre{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 90vh;
+    width: 70vw;
+    top: 2vw;
+    display: grid;
+    place-items: center;
+    
+    border-radius: 1.5%;
+   
+}
+
+.top{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 98%;
+    top:2%;
+    height: 8vh;
+}
+
+#header{
+    height: 0.5vh;
+    width: 96%;
+    background-color: rgba(165, 42, 42, 0);
+}
+#website_tittle{
+    height: 4vh;
+    width: 96%;
+    background-color: rgba(165, 42, 42, 0);
+    bottom:20%;
+    font-size: 3vh;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top:20%;
+    padding-left: 2%;
+}
+#website_link{
+    position: absolute;
+    height: 3vh;
+    width: 96%;
+    background-color: rgba(165, 42, 42, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5vh;
+    bottom:-5%;
+    left: 3%;
+}
+
+#faq_box{
+    position: absolute;
+    background-color: rgba(137, 43, 226, 0);
+    height: 77vh;
+    top:9vh;
+    width: 95%;
+    place-items: center;
+    display: grid;
+}
+#faq_items{
+    background-color: rgba(147, 94, 197, 0);
+    height: 70vh;
+    top:4vh;
+    width: 99%;
+    display:block;
+    overflow: scroll;
+    
+}
+
+#faq_heading{
+    position: absolute;
+    font-size: 2vh;
+    top:1%;
+    left: 1%;
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+
+    font-family: 'Inter', sans-serif;
+}
+
+#item{
+    background-color: rgba(255, 255, 0, 0);
+    width: 98%;
+    left: 1%;
+    top: 0vh;
+}
+
+#faq_text{
+    left:1%;
+    font-family: 'Inter', sans-serif;
+    padding: 1vh;
+    border-style: groove;
+    border-radius: 1vh;
+    border-width: 0vh;
+    background-color: rgba(0, 0, 0, 0.044);
+}
+
+#question{
+    font-size: 1.8vh;
+    color: rgb(48, 48, 48);
+    padding: 0.5vh;
+    font-weight: 500;
+    
+
+}
+
+#answer{
+    font-size: 1.6vh;
+    color: rgb(102, 102, 102);
+    padding: 0.5vh;
+    font-weight: 0;
+}
+
+#article{
+    font-size: 1.6vh;
+    color: rgb(102, 102, 102);
+    padding: 0.5vh;
+    font-weight: 0;
+}
+
+#info{
+    font-size: 1.2vh;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    bottom:1%
+}
